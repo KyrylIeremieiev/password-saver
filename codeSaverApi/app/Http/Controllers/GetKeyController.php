@@ -8,6 +8,11 @@ use App\Models\getKeyModel;
 class GetKeyController extends Controller
 {
     public function get($id){
+        $result = DB::table('pass')
+            ->where('id', $id)
+            ->get();
+
+        return $result[0];
         
     }
 }

@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class getKeyModel extends Model
 {
     use HasFactory;
-    protected $table = 'user';
+    protected $table = 'pass';
     public $timestamps = false;
 }
